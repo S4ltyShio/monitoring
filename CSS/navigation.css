@@ -1,27 +1,27 @@
+.hover:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+
 .bg-black a{
-    width: 100%;
-    font-size: 36px;
-    padding: 0.5%;
+    padding: 1%;
     margin: 7.5px;
     text-decoration: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .bg-black{
-    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    height: 100px;
 }
 
-.bg-black hr{
-    background-color: #90e0ef;
-    height: 10px;
-}
-
-.hover{
-    color:white;
-}
-
-.hover:hover{
-    color: #caf0f8;
-}
-.current{
-    color: #90e0ef;
+.floatright{
+    float: right  
 }
