@@ -9,24 +9,60 @@
     <title>Homepage</title>
 </head>
 <body>
-    <div class="bg-black">
-        <a class= "current" href="../index/index.html"><b>Home</b></a>
-        <a class= "hover" href="../pricing/pricing.html">Pricing</a>
-        <a class= "hover" href="../customers/customers.html">Customers</a>
-        <a class= "hover" href="../signin/signin.html">Sign In</a>
-        <a class= "hover" href="../signup/signup.html">Sign Up</a>
-    </div>
 
+  <nav class="navbar navbar-expand-sm ">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerD" aria-controls="navbarTogglerD" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerD">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/accessories">Accessories</a>
+        </li>
+        <li class="nav-item dropdown dmenu">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Clothing
+        </a>
+        <div class="dropdown-menu sm-menu">
+          <hr>
+          <a class="dropdown-item" href="/womens"> <img class = 'wm-dropdown' src = '/wm.png'/> Women's clothing</a>
+          <hr>
+          <a class="dropdown-item" href="mens"> <img class = 'wm-dropdown' src = '/mn.png'/> Men's clothing</a>
+          <hr>
+          <a class="dropdown-item" href="/kids">Kid's clothing</a>
+          <hr>
+        </div>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      </ul>
+      <div class = 'auth-actions'>
+     <!-- <% if customer_signed_in? %>
+        <%= link_to current_customer.email, edit_customer_registration_path %></strong><a href = '/cart'><i class="fas fa-shopping-cart"></i></a>
+         |
+        <%= link_to "Logout", destroy_customer_session_path, data: { turbo_method: :delete } %>
+      <% else %>
+        <%= link_to "Sign up", new_customer_registration_path %> |
+        <%= link_to "Login", new_customer_session_path %>
+      <% end %> -->
+      </div>
+    </div>
+  </nav>
       <div class="text-center"> 
         <h1>General</h1>
       </div>
 
       <div class="row">
-        <div class="col ps-5 pe-5">
+        <div class="col-4 ps-5 pe-5">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 1</h5>
-              <p class="card-text">Current status:  <span style="color: #39ff14">200 OK</span></p>
+              <p class="card-text">Current status:  <span class="ok">200 OK</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100 pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>
@@ -34,11 +70,11 @@
             </div>
           </div>
         </div>
-        <div class="col ps-5 pe-5">
+        <div class="col-4 ps-5 pe-5">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 2</h5>
-              <p class="card-text">Current status:  <span style="color: red">500 ERROR</span></p>
+              <p class="card-text">Current status:  <span class="bad">500 ERROR</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100  pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>
@@ -46,11 +82,11 @@
             </div>
           </div>
         </div>
-        <div class="col ps-5 pe-5">
+        <div class="col-4 ps-5 pe-5">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 3</h5>
-              <p class="card-text">Current status:  <span style="color: #39ff14">200 OK</span></p>
+              <p class="card-text">Current status:  <span class="ok">200 OK</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100 pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>
@@ -60,11 +96,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col ps-5 pe-5 mt-4">
+        <div class="col-4 ps-5 pe-5 mt-4">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 4</h5>
-              <p class="card-text">Current status:  <span style="color: #39ff14">200 OK</span></p>
+              <p class="card-text">Current status:  <span class="ok">200 OK</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100 pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>
@@ -72,11 +108,11 @@
             </div>
           </div>
         </div>
-        <div class="col ps-5 pe-5 mt-4">
+        <div class="col-4 ps-5 pe-5 mt-4">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 5</h5>
-              <p class="card-text">Current status:  <span style="color: red">500 ERROR</span></p>
+              <p class="card-text">Current status:  <span class="bad">500 ERROR</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100 pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>
@@ -84,11 +120,11 @@
             </div>
           </div>
         </div>
-        <div class="col ps-5 pe-5 mt-4">
+        <div class="col-4 ps-5 pe-5 mt-4">
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Website 6</h5>
-              <p class="card-text">Current status:  <span style="color: #39ff14">200 OK</span></p>
+              <p class="card-text">Current status:  <span class="ok">200 OK</span></p>
               <div class="row position-absolute bottom-0 start-1 w-100 pb-3">
                 <a href="../audits/audits.html">View all audits</a>
                 <a href="../audits/audits.html">View recent outages</a>

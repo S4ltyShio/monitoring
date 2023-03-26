@@ -9,18 +9,26 @@ body {
 }
 
 h1{
-    font-size: 48px !important;
+    font-size: 5em !important;
 }
 
 h5{
-    font-size: 32px !important;
+    font-size: 2em !important;
 }
 
 .card-body{
-    font-size: 24px !important;
+    font-size: 1.5em !important;
 }
 
 .card{
     height: 250px !important;
     padding-bottom: 2%;
+}
+
+.bad{
+    color: red;
+}
+
+.ok{
+    color: #39ff14;
 }
